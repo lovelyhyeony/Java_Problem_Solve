@@ -12,14 +12,15 @@ public class Var_07 {
 		
 		Random rnd = new Random();
 		
+		// 100 ~ 1000
 		int intTax = (rnd.nextInt(10)+1) * 100;
 		
 		// 세금 포함된 가격
 		System.out.println("부가가치세 포함된 가격 : " + intTax);
+		// 세금 뺀 가격
+		System.out.println("세금제외 가격 : " + (int)(intTax / 1.1));
 		// 세금 가격
-		System.out.println("세금 : " + (int)(intTax / 1.1));
-		// 세금을 뺀 가격
-		System.out.println("부가가치세 제외한 가격 : " + (int)(intTax - (intTax / 1.1)));
+		System.out.println("세금 : " + (int)(intTax - (intTax / 1.1)));
 		
 	}
 
